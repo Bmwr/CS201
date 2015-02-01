@@ -26,7 +26,12 @@ public class Rectangle
   public boolean intersects(Rectangle b)
   {
     //does this rectangle intersect b?
-    if (x + width)
+    if (b.width > 0 && b.height > 0 && width > 0 && height > 0
+        && b.x < x + width && b.x + b.width > x
+        && b.y < y + height && b.y + b.height >y)
+    return true;
+    else
+    return false;
 
   }
   public void show(Rectangle b)
