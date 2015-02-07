@@ -21,7 +21,7 @@ public class Rectangle
   public double perimeter()
   {
     //Computes the perimeter of the rectangle.
-    return 2*width + 2*height;
+    return 2*(width + height);
   }
   public boolean intersects(Rectangle b)
   {
@@ -32,11 +32,13 @@ public class Rectangle
     return true;
     else
     return false;
-
   }
-  public void show(Rectangle b)
+  public void show()
   {
     // Draw the rectangle on StdDraw.
+    StdDraw.setXscale(-250, 250);
+    StdDraw.setYscale(-250, 250);
+    StdDraw.setPenRadius(.005);
     StdDraw.rectangle(x, y, width/2, height/2);
   }
 }

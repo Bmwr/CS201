@@ -26,7 +26,8 @@ public class Turtle
     for (int i= 0; i<N; i++)
     {
       turtle.goForward(step);
-      turtle.turnLeft(angle);
+      // creates a star.
+      turtle.turnLeft(angle*2);
     }
   }
 }
