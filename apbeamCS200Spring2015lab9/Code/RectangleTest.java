@@ -17,7 +17,8 @@ public class RectangleTest
     Rectangle b = new Rectangle(x, y, w, h);
     StdOut.println("The area of Rectangle b is " + b.area());
     StdOut.println("The perimeter of Rectangle b is " + b.perimeter());
-    StdDraw.setPenColor(StdDraw.RED);
+    StdDraw.clear(StdDraw.GRAY);
+    StdDraw.setPenColor(StdDraw.YELLOW);
     a.show();
     StdDraw.setPenColor(StdDraw.BLUE);
     b.show();
