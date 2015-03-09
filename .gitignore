@@ -1,4 +1,9 @@
 Book Programs/
-*.class
-*.docx
-*/Report/
+**/*.class
+**/*.docx
+**/Report/
+**/Std*
+**/In.java
+**/Out.java
+**/Draw.java
+
