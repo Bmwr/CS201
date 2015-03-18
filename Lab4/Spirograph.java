@@ -34,11 +34,11 @@ public class Spirograph
 
 	public void draw()
 	{ // Sets the window and draws the spirograph.
-		StdDraw.setXscale( -500, 500 			 );
-		StdDraw.setYscale( -500, 500 			 );
-		StdDraw.setPenRadius( .005				 );
+		StdDraw.setXscale( -500, 500       );
+		StdDraw.setYscale( -500, 500       );
+		StdDraw.setPenRadius( .005         );
 		StdDraw.setPenColor( StdDraw.BLACK );
-		StdDraw.circle( 0.0, 0.0, R 			 );
+		StdDraw.circle( 0.0, 0.0, R        );
 		StdDraw.circle( 0.0, 0.0, offset   );
 
 		for ( int i = 0; i < N; i++ )
