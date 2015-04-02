@@ -6,6 +6,7 @@ import java.util.LinkedList;
 public class Parser
 {
   private static HashMap<String, Double> hash = new HashMap<String, Double>();
+
   public static List<String> nextStatement(List<String> token)
   {
     List<String> alpha = new LinkedList<String>(token);
