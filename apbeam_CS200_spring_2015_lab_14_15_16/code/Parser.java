@@ -44,10 +44,10 @@ public class Parser
         values.push(getNumber(a));
         String ops  = operators.pop();
         double vals = values.pop();
-        if      (ops.equals("+"))   vals = values.pop() + vals;
-        else if (ops.equals("-"))   vals = values.pop() - vals;
-        else if (ops.equals("*"))   vals = values.pop() * vals;
-        else if (ops.equals("/"))   vals = values.pop() / vals;
+        if      (ops.equals("+"))   vals = values.pop() +           vals;
+        else if (ops.equals("-"))   vals = values.pop() -           vals;
+        else if (ops.equals("*"))   vals = values.pop() *           vals;
+        else if (ops.equals("/"))   vals = values.pop() /           vals;
         else if (ops.equals("^"))   vals = values.pop() * Math.exp(vals);
         values.push(vals);
       }
