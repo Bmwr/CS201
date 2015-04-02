@@ -1,4 +1,5 @@
 import java.util.List;
+import java.lang.Math;
 import java.util.Stack;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -37,6 +38,7 @@ public class Parser
       else if (a.equals("-"))  operators.push(a);
       else if (a.equals("*"))  operators.push(a);
       else if (a.equals("/"))  operators.push(a);
+      else if (a.equals("^"))  operators.push(a);
       else if (values.size() != 0)
       {
         values.push(getNumber(a));
@@ -46,6 +48,7 @@ public class Parser
         else if (ops.equals("-"))   vals = values.pop() - vals;
         else if (ops.equals("*"))   vals = values.pop() * vals;
         else if (ops.equals("/"))   vals = values.pop() / vals;
+        else if (ops.equals("^"))   vals = values.pop() * Math.exp(vals);
         values.push(vals);
       }
       else values.push(getNumber(a));
