@@ -19,7 +19,7 @@ public class Tokenizer
 
 // Reads the file in and prints it out as a String then places it into a list.
     String text             = new Scanner(file).useDelimiter("\\A").next();
-    text = text.toLowerCase().replaceAll("\n"," ; "                      );
+    text = text.replaceAll("\n"," ; ").toLowerCase                      ();
     text = text.replaceAll("\\(", " ( "                                  );
     text = text.replaceAll("\\)", " ) "                                  );
     LinkedList<String> list = new LinkedList<String>                    ();
